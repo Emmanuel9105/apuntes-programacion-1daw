@@ -166,3 +166,6 @@ for (const fruit in FRUITS) {
 }
 
 // For of
+for (const fruit of FRUITS) {
+  console.log(fruit) // Manzana; Pera; Plátano;
+}
