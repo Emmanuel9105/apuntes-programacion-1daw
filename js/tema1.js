@@ -50,3 +50,26 @@ num1 >= 4 // false
 num1 <= 4 // true
 
 console.log(num1)
+
+// Operadores aritméticos
+
+// Suma
+console.log(1 + 2) // 3
+// Resta
+console.log(2 - 1) // 1
+// Multiplicación
+console.log(2 * 2) // 4
+// División (divisor 0)
+console.log(2 / 0) // Infinity
+// División (divisor diferente a 0)
+console.log(6 / 3) // 2
+// Potencia
+console.log(2 ** 3) // 8
+// Residuo
+console.log(12 % 5) // 2
+// Incremento
+console.log(num1++) // 1; Primero imprime el número y luego le suma 1
+console.log(++num1) // 3; Primero le suma 1 y luego imprime el número
+// Decremento
+console.log(num1--) // 3; Primero imprime el número y luego le resta 1
+console.log(--num1) // 1; Primero le resta 1 y luego imprime el número
