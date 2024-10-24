@@ -104,3 +104,13 @@ if (num1 !== 1) {
 } else {
   console.log('Hola mundo') // Esto se imprime por consola
 }
+
+// Else if
+
+if (num1 === 2) {
+  console.log('Hola 2º mundo')
+} else if (num1 === 1) {
+  console.log('Hola 1er mundo') // Esto se imprime por consola
+} else {
+  console.log('Adiós a todo el mundo')
+}
