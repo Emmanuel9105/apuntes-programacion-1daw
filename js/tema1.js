@@ -5,7 +5,7 @@
     de varias lineas
 */
 
-var variableEnDesuso = 'Declaración en desuso'
+var variableEnDesuso = 'Declaración de variable en desuso'
 
 let variableEnUso = 'Declaración de variable en uso'
 
