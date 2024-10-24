@@ -73,3 +73,11 @@ console.log(++num1) // 3; Primero le suma 1 y luego imprime el número
 // Decremento
 console.log(num1--) // 3; Primero imprime el número y luego le resta 1
 console.log(--num1) // 1; Primero le resta 1 y luego imprime el número
+
+// Operadores lógicos
+// AND lógico
+console.log(true && false) // false
+// OR lógico
+console.log(true || false) // true
+// NOT lógico
+console.log(!true) // false
