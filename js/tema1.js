@@ -136,3 +136,25 @@ NaN
 
 // Truthy
 ;('Todo lo demás') // En Javascript se escribe así, pero es 'Todo lo demás' a lo que se refiere
+
+// While
+while (num1 <= 5) {
+  console.log(num1++) // 1, 2, 3, 4, 5
+}
+
+num1 = 1
+while (num1 <= 5) {
+  console.log(++num1) // 2, 3, 4, 5, 6
+}
+
+// Do while
+num1 = 1
+do {
+  console.log(num1++) // 1, 2, 3, 4, 5
+} while (num1 <= 5)
+
+// For
+
+// For in
+
+// For of
