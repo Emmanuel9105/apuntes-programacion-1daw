@@ -114,3 +114,11 @@ if (num1 === 2) {
 } else {
   console.log('Adiós a todo el mundo')
 }
+
+// Nesting (a evitar, síntoma de refactorización)
+if (num1 !== 1) {
+  // No se entra en este if, por lo que el siguiente no se ejecuta
+  if (num1 === 1) {
+    console.log('Hola 1er mundo') // Esto no se imprime por consola
+  }
+}
