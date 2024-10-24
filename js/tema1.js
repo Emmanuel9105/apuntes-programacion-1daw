@@ -169,3 +169,11 @@ for (const fruit in FRUITS) {
 for (const fruit of FRUITS) {
   console.log(fruit) // Manzana; Pera; Plátano;
 }
+
+// Longitud de elementos
+console.log(variableEnUso.length) // 21
+console.log(num1.length) // undefined (la longitud de un número no puede medirse)
+console.log(FRUITS.length) // 3
+
+// Índice de elementos
+console.log(variableEnUso.slice(3, 5)) //gn (incluye el primer elemento y no incluye el segundo)
