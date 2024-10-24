@@ -93,7 +93,14 @@ console.log(!true) // false
 
 // Condiciones
 
-// IF
+// If
 if (num1 === 1) {
-  console.log('Hola 1er mundo')
+  console.log('Hola 1er mundo') // Esto se imprime por consola
+}
+
+// Else
+if (num1 !== 1) {
+  console.log('Adiós 1er mundo')
+} else {
+  console.log('Hola mundo') // Esto se imprime por consola
 }
