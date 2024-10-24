@@ -8,6 +8,12 @@
 // Imprimir información por consola
 console.log('Esto se ve por consola')
 
+// Introducir información por consola (en JS es por el navegador)
+// Los datos siempre se envían como texto
+prompt('Introduce un texto:')
+// Para poder trabajar con los datos hace falta guardarlos en una variable
+let text1 = prompt('Introduce un texto:')
+
 // Declaración antigua que no hace caso al scope (ámbito) de trabajo.
 var variableEnDesuso = 'Declaración de variable en desuso'
 // Declaración moderna que tiene en cuenta el scope (ámbito) de trabajo.
