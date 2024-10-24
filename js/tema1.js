@@ -137,7 +137,7 @@ NaN
 // Truthy
 ;('Todo lo demás') // En Javascript se escribe así, pero es 'Todo lo demás' a lo que se refiere
 
-// While
+// While (se ejecuta mínimo 0 veces)
 while (num1 <= 5) {
   console.log(num1++) // 1, 2, 3, 4, 5
 }
@@ -147,13 +147,17 @@ while (num1 <= 5) {
   console.log(++num1) // 2, 3, 4, 5, 6
 }
 
-// Do while
+// Do while (se ejecuta mínimo 1 vez)
 num1 = 1
 do {
   console.log(num1++) // 1, 2, 3, 4, 5
 } while (num1 <= 5)
 
 // For
+num1 = 1
+for (let i = 1; i <= 5; i++) {
+  console.log(i) // 1, 2, 3, 4, 5
+}
 
 // For in
 
