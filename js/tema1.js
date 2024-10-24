@@ -177,3 +177,7 @@ console.log(FRUITS.length) // 3
 
 // Índice de elementos
 console.log(variableEnUso.slice(3, 5)) //gn (incluye el primer elemento y no incluye el segundo)
+
+// Funciones
+
+//Excepciones
