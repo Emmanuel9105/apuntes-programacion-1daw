@@ -5,6 +5,9 @@
     de varias lineas
 */
 
+// Imprimir información por consola
+console.log('Esto se ve por consola')
+
 // Declaración antigua que no hace caso al scope (ámbito) de trabajo.
 var variableEnDesuso = 'Declaración de variable en desuso'
 // Declaración moderna que tiene en cuenta el scope (ámbito) de trabajo.
