@@ -160,5 +160,9 @@ for (let i = 1; i <= 5; i++) {
 }
 
 // For in
+const FRUITS = ['Manzana', 'Pera', 'Plátano']
+for (const fruit in FRUITS) {
+  console.log(fruit) // 0, 1, 2
+}
 
 // For of
