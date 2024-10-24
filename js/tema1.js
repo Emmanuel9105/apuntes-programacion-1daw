@@ -122,3 +122,17 @@ if (num1 !== 1) {
     console.log('Hola 1er mundo') // Esto no se imprime por consola
   }
 }
+
+// Valores truthy y falsy
+// En Javascript todo es verdadero o falso, dependiendo de su valor
+
+// Falsy
+false
+0
+;('') // En Javascript se escribe así, pero es '' a lo que se refiere
+null
+undefined
+NaN
+
+// Truthy
+;('Todo lo demás') // En Javascript se escribe así, pero es 'Todo lo demás' a lo que se refiere
