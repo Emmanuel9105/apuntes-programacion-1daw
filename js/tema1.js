@@ -90,3 +90,10 @@ console.log(true && false) // false
 console.log(true || false) // true
 // NOT lógico
 console.log(!true) // false
+
+// Condiciones
+
+// IF
+if (num1 === 1) {
+  console.log('Hola 1er mundo')
+}
