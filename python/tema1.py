@@ -106,7 +106,7 @@ False
 # Truthy
 'Todo lo demás'
 
-# While
+# Bucle While
 
 secretNumber = 7
 tries = None
@@ -122,3 +122,11 @@ while tries != secretNumber:
     print('Demasiado alto')
   else:
     print('Has acertado')
+
+# Bucle For
+
+for number in range(1, 6): # Genera los números del 1 al 5
+  if number == 3:
+    print('Hemos encontrado el 3')
+  else:
+    print(number)
