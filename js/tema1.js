@@ -10,16 +10,44 @@ console.log('Esto se ve por consola')
 
 // Introducir información por consola (en JS es por el navegador)
 // Los datos siempre se envían como texto
-prompt('Introduce un texto:')
+// ! prompt('Introduce un texto:')
 // Para poder trabajar con los datos hace falta guardarlos en una variable
-let text1 = prompt('Introduce un texto:')
+// ! let text1 = prompt('Introduce un texto:')
 
-// Declaración antigua que no hace caso al scope (ámbito) de trabajo.
+// Declaración antigua que tiene en cuenta el scope (ámbito) de trabajo.
 var variableEnDesuso = 'Declaración de variable en desuso'
 // Declaración moderna que tiene en cuenta el scope (ámbito) de trabajo.
 let variableEnUso = 'Declaración de variable en uso'
 // Declaración moderna e inmutable que tiene en cuenta el scope (ámbito) de trabajo.
 const CONSTANTE_EN_USO = 'Declaración de constante en uso'
+
+// Ejemplo de uso VAR (en desuso)
+function exampleVar() {
+  var x = 10 // x con ID 1
+
+  if (true) {
+    var x = 20 // x con ID 1
+    console.log(x) // 20 o x con ID 1
+  }
+
+  console.log(x) // 20 o x con ID 1
+}
+
+exampleVar()
+
+// Ejemplo de uso LET (en uso)
+function exampleLet() {
+  let x = 10 // x con ID 1
+
+  if (true) {
+    let x = 20 // x con ID 2
+    console.log(x) // 20 o x con ID 2
+  }
+
+  console.log(x) // 10 o x con ID 1
+}
+
+exampleLet()
 
 // Comparaciones lógicas
 
