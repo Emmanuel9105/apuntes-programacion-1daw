@@ -114,7 +114,9 @@ tries = None
 print('Adivina el número entre 1 y 10')
 
 while tries != secretNumber:
-  tries = int(input('Introduce un número: '))
+  # ! tries = int(input('Introduce un número: '))
+
+  tries = 7
 
   if tries < secretNumber:
     print('Demasiado bajo')
@@ -141,3 +143,37 @@ print(len(FRUITS))
 
 # Índice de elementos
 print(variable[2:4]) # cl -> Declaración de variable
+
+# Funciones
+
+def nombreFuncion():
+  # Código que ejecuta la función
+  return # Las funciones deben tener al menos una línea de código en su interior
+
+# Función sin parámetros ni retorno
+
+def saludar():
+  print('Hola')
+
+saludar()
+
+# Función con parámetros sin retorno
+
+def saludar2(nombre):
+  print(f'Hola {nombre}')
+
+saludar2('Emmanuel')
+saludar2('Jero')
+
+# Función sin parámetros con retorno
+def suma():
+  return 10 + 12
+
+print(suma())
+
+# Función con parámetros y retorno
+
+def resta (a, b):
+  return a - b
+
+print(resta(30, 8))
