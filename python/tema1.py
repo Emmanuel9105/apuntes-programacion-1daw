@@ -130,3 +130,14 @@ for number in range(1, 6): # Genera los números del 1 al 5
     print('Hemos encontrado el 3')
   else:
     print(number)
+
+# Longitud de elementos
+
+FRUITS = ['Manzana', 'Pera', 'Plátano']
+
+print(len(variable))
+# ! print(len(secretNumber)) # Rompe el programa porque los números no tiene longitud
+print(len(FRUITS))
+
+# Índice de elementos
+print(variable[2:4]) # cl -> Declaración de variable
