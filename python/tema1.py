@@ -67,3 +67,29 @@ print(2 ** 3) # 8
   3º * / % // Multiplicaciones, divisiones, módulos y divisiones enteras
   4º + - Sumas y restas
 """
+
+# Condiciones
+
+edad = 18
+
+if edad < 18:
+  print('Eres menor de edad') # No se imprime por consola
+elif edad == 18:
+  print('Acabas de cumplir la mayoría de edad') # Se imprime por consola
+else:
+  print('Eres mayor de edad') # No se imprime por consola
+
+# Condición anidada
+
+edad = 25
+licencia = True
+
+if edad >= 18:
+  if licencia:
+    print('Puedes conducir') # Se imprime por consola
+  else:
+    print('Necesitas una licencia para conducir') # No se imprime por consola
+else:
+  print('Debes ser mayor de edad para conducir') # No se imprime por consola
+
+# 
