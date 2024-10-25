@@ -105,3 +105,20 @@ False
 
 # Truthy
 'Todo lo demás'
+
+# While
+
+secretNumber = 7
+tries = None
+
+print('Adivina el número entre 1 y 10')
+
+while tries != secretNumber:
+  tries = int(input('Introduce un número: '))
+
+  if tries < secretNumber:
+    print('Demasiado bajo')
+  elif tries > secretNumber:
+    print('Demasiado alto')
+  else:
+    print('Has acertado')
