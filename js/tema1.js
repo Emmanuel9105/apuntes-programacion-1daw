@@ -314,3 +314,102 @@ const potencia = (a, b) => a ** b
 console.log(potencia(2, 3))
 
 //Excepciones
+let res = 10 / 0
+
+console.log(res) // Infinity
+
+// ! NO DESCOMENTAR O NO SE EJECUTARÁ EL RESTO DEL SCRIPT
+// console.log(miNombreCompleto) // Uncaught ReferenceError: miNombreCompleto is not defined <- Variable no definida y rompería el programa
+
+try {
+  // No se debe añadir todo el código al try porque no se sabrá de dónde viene el error
+  console.log(miNombreCompleto)
+} catch (error) {
+  console.log(`Ha ocurrido un error: ${error.message}`) // Ha ocurrido un error: miNombreCompleto is not defined
+} finally {
+  console.log(
+    'Parte de excepciones que siempre se ejecuta falle o no el try/catch'
+  ) // Siempre se ejecuta
+}
+
+function dividir(a, b) {
+  if (b === 0) {
+    throw new Error('No se puede dividir por 0')
+  }
+
+  return a / b
+}
+
+try {
+  dividir(10, 0)
+} catch (error) {
+  console.log(`Error: ${error.message}`) // Error: No se puede dividir por 0
+}
+
+// * Ejercicio try/catch
+
+// notas = [] -> Lista (array, arreglo, vector) vacía
+function calcularPromedio(notas) {
+  let suma = 0
+  let promedio
+
+  try {
+    // i = 0; notas.length = 0 -> 0 < 0
+    for (let i = 0; i < notas.length; i++) {
+      suma += notas[i]
+    }
+
+    // Entra en el if porque notas.length = 0
+    if (notas.length === 0) {
+      // Lanza el error y pasa al catch
+      throw new Error('La lista de notas está vacía')
+    }
+
+    promedio = suma / notas.length
+
+    // Si vamos a mostrar por pantalla el resultado de la función este console.log es innecesario
+    console.log(`El promedio es ${promedio}`)
+  } catch (error) {
+    // Imprimimos por consola
+    console.log('Error:', error.message) // Error: La lista de notas está vacía
+    // Asignamos promedio = null
+    promedio = null
+  }
+
+  // Devolvemos promedio = null
+  return promedio
+}
+
+const NOTAS_ESTUDIANTE = []
+const RESULTADO = calcularPromedio(NOTAS_ESTUDIANTE)
+console.log(`Resultado: ${RESULTADO}`) // Resultado: null
+
+// * Solución del ejercicio try/catch
+
+function calcularPromedio2(notas) {
+  let suma = 0
+  let promedio
+
+  // Como notas.length = 0 entramos en el if
+  if (notas.length === 0) {
+    console.log('La lista de notas está vacía')
+    // Salimos de la función, el resto no se ejecuta
+    return null
+  }
+
+  try {
+    for (let i = 0; i < notas.length; i++) {
+      suma += notas[i]
+    }
+
+    promedio = suma / notas.length
+  } catch (error) {
+    console.log('Error:', error.message)
+    promedio = null
+  }
+
+  return promedio
+}
+
+const NOTAS_ESTUDIANTE_2 = [4, 7, 6]
+console.log(`Resultado: ${calcularPromedio2(NOTAS_ESTUDIANTE_2)}`)
