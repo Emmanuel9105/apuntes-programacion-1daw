@@ -208,4 +208,65 @@ console.log(variableEnUso.slice(3, 5)) //gn (incluye el primer elemento y no inc
 
 // Funciones
 
+// Función sin parámetros ni retorno
+function nombreFuncion() {
+  // Código que ejecuta la función
+}
+
+function saludar() {
+  console.log('Hola desde la función')
+}
+
+saludar()
+
+// Función con parámetros sin retorno
+function saludar2(nombre) {
+  console.log(`Hola ${nombre}`)
+}
+
+saludar2('Emmanuel')
+saludar2('Jero')
+
+// Función sin parámetros con retorno
+function suma() {
+  return 10 + 12
+}
+
+console.log(suma())
+
+// Función con parámetros y retorno
+function resta(a, b) {
+  return a - b
+}
+
+console.log(resta(30, 8))
+
+// Función con parámetros y retorno pidiendo números desde el prompt
+/* function mult(a, b) {
+  return a * b
+}
+
+const NUM1 = parseInt(prompt('Introduce un número entero:'))
+const NUM2 = parseInt(prompt('Introduce un segundo número entero:'))
+
+console.log(mult(NUM1, NUM2)) */
+
+// Función flecha
+const flecha = () => {
+  let saludo = 'Hola desde la flecha'
+  console.log(saludo)
+}
+
+flecha()
+console.log(flecha)
+
+/* Función flecha contraída
+  const potencia = (a, b) => {
+    return a ** b
+  }
+ */
+const potencia = (a, b) => a ** b
+
+console.log(potencia(2, 3))
+
 //Excepciones
