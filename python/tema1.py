@@ -177,3 +177,14 @@ def resta (a, b):
   return a - b
 
 print(resta(30, 8))
+
+# Excepciones
+
+try:
+  # Código que puede causar excepciones
+except:
+  # Código para manejar la excepción
+else:
+  # Código que se ejecuta si no hay excepciones (opcional)
+finally:
+  # Código que siempre se ejecuta, haya o no una excepción (opcional)
