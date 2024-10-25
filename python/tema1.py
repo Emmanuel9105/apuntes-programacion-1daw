@@ -14,3 +14,7 @@ print('Esto se ve por consola')
 # Para poder trabajar con los datos hace falta guardarlos en una variable
 # ! text1 = input('Introduce un texto:')
 # ! print(text1)
+
+# Declaración de variables
+variable = 'Declaración de variable'
+print(variable)
