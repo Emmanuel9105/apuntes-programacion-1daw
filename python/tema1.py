@@ -92,4 +92,16 @@ if edad >= 18:
 else:
   print('Debes ser mayor de edad para conducir') # No se imprime por consola
 
-# 
+# Valores truthy y falsy
+
+# Falsy
+None
+False
+0
+''
+[]
+()
+{}
+
+# Truthy
+'Todo lo demás'
