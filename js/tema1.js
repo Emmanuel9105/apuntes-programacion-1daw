@@ -198,6 +198,50 @@ for (const fruit of FRUITS) {
   console.log(fruit) // Manzana; Pera; Plátano;
 }
 
+// Bucles infinitos
+
+// While infinito
+// ! NO EJECUTAR NI DESCOMENTAR
+let numWhile = 1
+/* 
+  while (numWhile < 5) {
+    console.log('Esto es un bucle infinito');
+  }
+  */
+
+// El bucle deja de ser infinito de la siguiente forma
+while (numWhile < 5) {
+  console.log('Esto NO es un while infinito')
+  numWhile++ // Esto cambia el valor del condicionante para parar el bucle en cierto momento
+}
+
+// Do while infinito
+// ! NO EJECUTAR NI DESCOMENTAR
+let numDoWhile = 1
+/* 
+  do {
+    console.log('Esto es un bucle infinito');
+  } while (numDoWhile < 5)
+  */
+
+// El bucle deja de ser infinito de la siguiente forma
+do {
+  console.log('Esto NO es un do while infinito')
+  numDoWhile++
+} while (numDoWhile < 5)
+
+// For infinito
+// ! NO EJECUTAR NI DESCOMENTAR
+/* 
+  for (;;) {
+    console.log('Esto es un bucle infinito');
+  } 
+  */
+
+for (let i = 1; i < 5; i++) {
+  console.log('Esto NO es un for infinito')
+}
+
 // Longitud de elementos
 console.log(variableEnUso.length) // 21
 console.log(num1.length) // undefined (la longitud de un número no puede medirse)
