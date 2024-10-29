@@ -295,3 +295,17 @@ else:
 # Redondeo
 numeroRedondear = 2.747584
 print(round(numeroRedondear, 2)) # 2 es el número de decimales que devuelve el round
+
+# Imprimir número impar hasta un número dado
+
+def oddNumbersUpTo():
+  number = int(input("Enter a positive integer: "))
+  if number <= 0:
+    print("Please enter a positive integer.")
+    return
+
+  odds = [str(i) for i in range(1, number + 1) if i % 2 != 0]
+  result = ", ".join(odds[:-1]) + " and " + odds[-1] + "."
+  print(result)
+
+oddNumbersUpTo()
