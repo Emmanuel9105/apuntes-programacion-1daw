@@ -274,3 +274,24 @@ def tabla_multiplicar(numero, hasta=10):
         print(f"{numero} x {i} = {numero * i}")
 
 tabla_multiplicar(2)
+
+# Potencia
+
+numeroAElevar = 2
+numeroPotencia = 3
+
+resultadoPotencia = math.pow(numeroAElevar, numeroPotencia)
+
+print(resultadoPotencia)
+
+# Raíz cuadrada
+numeroRaiz = 100
+
+if numeroRaiz == 0:
+  print('No se puede calcular la raíz cuadrada de 0')
+else:
+  print(math.sqrt(numeroRaiz))
+
+# Redondeo
+numeroRedondear = 2.747584
+print(round(numeroRedondear, 2)) # 2 es el número de decimales que devuelve el round
