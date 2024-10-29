@@ -287,8 +287,8 @@ print(resultadoPotencia)
 # Raíz cuadrada
 numeroRaiz = 100
 
-if numeroRaiz == 0:
-  print('No se puede calcular la raíz cuadrada de 0')
+if numeroRaiz < 0:
+  print('No se puede calcular la raíz cuadrada de un número negativo')
 else:
   print(math.sqrt(numeroRaiz))
 
