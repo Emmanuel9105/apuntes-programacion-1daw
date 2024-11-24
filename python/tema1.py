@@ -1,3 +1,6 @@
+# Importaciones en Python
+import math
+
 # Esto es un comentario de una linea
 
 '''
@@ -192,3 +195,117 @@ else:
 finally:
   # Código que siempre se ejecuta, haya o no una excepción (opcional)
   print('Finally') # Se muestra por consola
+
+# Operaciones
+
+# Sumatorio
+sumatorio1 = 3
+sumatorio2 = 5
+resultadoSumatorio = sum(range(sumatorio1, sumatorio2 + 1))
+
+print(resultadoSumatorio)
+
+# Productorio
+productorio1 = 3
+productorio2 = 5
+resultadoProductorio = math.prod(range(productorio1, productorio2 + 1))
+
+print(resultadoProductorio)
+
+# Factorial
+factorial = 3
+resultadoFactorial = math.factorial(factorial)
+
+print(resultadoFactorial)
+
+# Número primo
+numeroPrimo = 29
+
+def isPrime(number):
+  if number <= 1:
+    return False
+  for i in range(2, int(number ** 0.5) + 1):
+    if number % i == 0:
+      return False
+  return True
+
+print(isPrime(numeroPrimo))
+
+# Suma de factoriales
+factorial1 = 3
+factorial2 = 5
+
+resultadoFactorial1 = math.factorial(factorial1)
+resultadoFactorial2 = math.factorial(factorial2)
+
+resultadoSumaFactoriales = resultadoFactorial1 + resultadoFactorial2
+
+print(resultadoSumaFactoriales)
+
+def sumaFactoriales(factorial1, factorial2):
+  resultadoFactorial1 = math.factorial(factorial1)
+  resultadoFactorial2 = math.factorial(factorial2)
+  resultadoSumaFactoriales = resultadoFactorial1 + resultadoFactorial2
+  return resultadoSumaFactoriales
+
+print(sumaFactoriales(3, 5))
+
+# Media de N números
+
+listaNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+media = sum(listaNumeros) / len(listaNumeros)
+
+print(media)
+
+#  Capicúa
+def isCapicua(numero):
+    # Convertimos el número a string para poder compararlo al revés
+    numero_str = str(numero)
+    return numero_str == numero_str[::-1]
+
+# Longitud de una cadena
+longitudCadena = "Hola"
+
+print(len(longitudCadena))
+
+# Tabla de multiplicar de N número
+def tabla_multiplicar(numero, hasta=10):
+    for i in range(0, hasta + 1):
+        print(f"{numero} x {i} = {numero * i}")
+
+tabla_multiplicar(2)
+
+# Potencia
+
+numeroAElevar = 2
+numeroPotencia = 3
+
+resultadoPotencia = math.pow(numeroAElevar, numeroPotencia)
+
+print(resultadoPotencia)
+
+# Raíz cuadrada
+numeroRaiz = 100
+
+if numeroRaiz < 0:
+  print('No se puede calcular la raíz cuadrada de un número negativo')
+else:
+  print(math.sqrt(numeroRaiz))
+
+# Redondeo
+numeroRedondear = 2.747584
+print(round(numeroRedondear, 2)) # 2 es el número de decimales que devuelve el round
+
+# Imprimir número impar hasta un número dado
+
+def oddNumbersUpTo():
+  number = int(input("Enter a positive integer: "))
+  if number <= 0:
+    print("Please enter a positive integer.")
+    return
+
+  odds = [str(i) for i in range(1, number + 1) if i % 2 != 0]
+  result = ", ".join(odds[:-1]) + " and " + odds[-1] + "."
+  print(result)
+
+oddNumbersUpTo()
